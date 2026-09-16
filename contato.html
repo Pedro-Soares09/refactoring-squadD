@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre em contato com o Squad D para projetos, parcerias e orçamentos." />
+  <title>Contato | Squad D - Soluções em Tecnologia</title>
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/contato.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho e Navegação Global -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="home.html" class="logo-container">
+        <span class="squad-badge">Squad D</span>
+        <span class="site-title">Tech Solutions</span>
+      </a>
+      <span style="font-size: 0.85rem; color: #94a3b8;">ADS &bull; Desenvolvimento Web & Mobile</span>
+    </div>
+    <nav class="main-nav" aria-label="Navegação Principal">
+      <ul class="nav-list">
+        <li><a href="home.html" class="nav-link">Início</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+        <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+        <li><a href="projetos.html" class="nav-link">Projetos</a></li>
+        <li><a href="habilidades.html" class="nav-link">Habilidades</a></li>
+        <li><a href="case-de-sucesso.html" class="nav-link">Case de Sucesso</a></li>
+        <li><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+        <li><a href="contato.html" class="nav-link active">Contato</a></li>
+        <li><a href="chat.html" class="nav-link nav-ai-chat">🤖 Chat com IA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="site-main">
+    <div class="page-header">
+      <h1 class="page-title">Fale Conosco</h1>
+      <p class="page-subtitle">Conheça nossa localização, valores e envie uma mensagem diretamente para a equipe</p>
+    </div>
+
+    <div class="contact-layout">
+      
+      <!-- Formulário de Contato -->
+      <section class="contact-form-card" aria-label="Formulário de Mensagem">
+        <h2>Envie sua Mensagem</h2>
+        <p class="contact-intro">Preencha o formulário abaixo e responderemos o mais breve possível.</p>
+        
+        <form class="contact-form" action="#" method="post" onsubmit="event.preventDefault(); alert('Obrigado! Sua mensagem foi enviada com sucesso ao Squad D.'); this.reset();">
+          <div class="form-group">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-mail para Retorno:</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="mensagem">Mensagem / Demanda:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Como o Squad D pode te ajudar?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        </form>
+      </section>
+
+      <!-- Informações do Squad e Valores -->
+      <section class="contact-info-card" aria-label="Informações da Equipe">
+        <h2>Equipe Squad D</h2>
+        <p class="contact-intro">Profissionais dedicadas prontas para novos projetos e parcerias.</p>
+
+        <div class="info-block">
+          <h3>Integrantes</h3>
+          <p>Débora Oliveira, Geysiane Alves, Maria Clara e Luiza de Deus.</p>
+        </div>
+
+        <div class="info-block">
+          <h3>Valores e Responsabilidades</h3>
+          <ul>
+            <li>Compromisso irrestrito com a qualidade do código</li>
+            <li>Responsabilidade, ética e transparência profissional</li>
+            <li>Respeito rigoroso aos prazos combinados</li>
+          </ul>
+        </div>
+
+        <div class="info-block">
+          <h3>Canais Diretos</h3>
+          <p>
+            <strong>E-mail:</strong> contato@squadd-tech.dev<br />
+            <strong>Horário:</strong> Segunda a Sexta, das 08h às 18h
+          </p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Mapa e Localização -->
+    <section class="map-section" aria-label="Localização">
+      <h3>Nossa Base de Estudos &bull; FICR - Recife</h3>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=FICR+Recife&output=embed"
+          loading="lazy"
+          title="Mapa de Localização da FICR Recife"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé Global -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-team">Squad D &bull; <span class="footer-members">Débora, Geysiane, Maria Clara e Luiza</span></p>
+      <p class="footer-copy">&copy; 2025 Squad D. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

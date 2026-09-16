@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Converse com a Inteligência Artificial do Squad D e tire dúvidas sobre a equipe, serviços e projetos." />
+  <title>Chat com IA | Squad D - Soluções em Tecnologia</title>
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/chat.css" />
+</head>
+<body>
+
+  <!-- Cabeçalho e Navegação Global -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="home.html" class="logo-container">
+        <span class="squad-badge">Squad D</span>
+        <span class="site-title">Tech Solutions</span>
+      </a>
+      <span style="font-size: 0.85rem; color: #94a3b8;">ADS &bull; Desenvolvimento Web & Mobile</span>
+    </div>
+    <nav class="main-nav" aria-label="Navegação Principal">
+      <ul class="nav-list">
+        <li><a href="home.html" class="nav-link">Início</a></li>
+        <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+        <li><a href="servicos.html" class="nav-link">Serviços</a></li>
+        <li><a href="projetos.html" class="nav-link">Projetos</a></li>
+        <li><a href="habilidades.html" class="nav-link">Habilidades</a></li>
+        <li><a href="case-de-sucesso.html" class="nav-link">Case de Sucesso</a></li>
+        <li><a href="depoimentos.html" class="nav-link">Depoimentos</a></li>
+        <li><a href="contato.html" class="nav-link">Contato</a></li>
+        <li><a href="chat.html" class="nav-link nav-ai-chat active">🤖 Chat com IA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="site-main">
+    <div class="page-header" style="margin-bottom: 20px;">
+      <h1 class="page-title">Assistente Virtual com IA</h1>
+      <p class="page-subtitle">Tire dúvidas sobre os membros do Squad D, nossos serviços, metodologia e portfólio em tempo real</p>
+    </div>
+
+    <!-- Container do Chat Interativo -->
+    <div class="chat-container" id="chat-widget">
+      
+      <!-- Topo do Chat -->
+      <div class="chat-header">
+        <div class="chat-assistant-info">
+          <div class="chat-bot-avatar">🤖</div>
+          <div class="chat-bot-details">
+            <h3>Assistente Squad D</h3>
+            <div class="chat-status-indicator">
+              <span class="status-dot"></span>
+              <span id="chat-status-text">Online &bull; Pronto para conversar</span>
+            </div>
+          </div>
+        </div>
+        <div class="chat-actions-top">
+          <button id="btn-clear-chat" class="btn-icon-clear" title="Limpar conversa">Limpar Chat</button>
+        </div>
+      </div>
+
+      <!-- Histórico de Mensagens -->
+      <div class="chat-messages" id="chat-messages-container" aria-live="polite">
+        
+        <!-- Mensagem de Boas-Vindas da IA -->
+        <div class="message bot">
+          <div class="message-avatar">IA</div>
+          <div class="message-bubble">
+            Olá! Eu sou a Inteligência Artificial oficial do <strong>Squad D</strong>. 🚀<br><br>
+            Posso te contar tudo sobre as nossas desenvolvedoras (<strong>Débora, Geysiane, Maria Clara e Luiza</strong>), nossos serviços de desenvolvimento, projetos ou sobre o nosso case de sucesso.<br><br>
+            Como posso te ajudar hoje?
+            <div class="message-time">Agora</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Indicador de Digitando -->
+      <div class="typing-indicator" id="typing-indicator">
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+      </div>
+
+      <!-- Pílulas de Perguntas Frequentes / Sugestões -->
+      <div class="chat-suggestions" aria-label="Sugestões de perguntas">
+        <button type="button" class="suggestion-pill" data-question="Quem são as integrantes do Squad D?">👥 Quem são as integrantes?</button>
+        <button type="button" class="suggestion-pill" data-question="Quais serviços o squad oferece?">💻 Quais serviços oferecem?</button>
+        <button type="button" class="suggestion-pill" data-question="Fale sobre os resultados do Case de Sucesso">📈 Resultados do Case</button>
+        <button type="button" class="suggestion-pill" data-question="Como posso entrar em contato com o squad?">📬 Como entrar em contato?</button>
+      </div>
+
+      <!-- Área de Envio de Mensagens -->
+      <div class="chat-input-area">
+        <form id="chat-form" class="chat-form">
+          <input 
+            type="text" 
+            id="chat-user-input" 
+            class="chat-input" 
+            placeholder="Digite sua mensagem aqui..." 
+            autocomplete="off"
+            required 
+          />
+          <button type="submit" id="chat-send-btn" class="chat-send-btn" aria-label="Enviar mensagem" title="Enviar">
+            ➤
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Rodapé Global -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p class="footer-team">Squad D &bull; <span class="footer-members">Débora, Geysiane, Maria Clara e Luiza</span></p>
+      <p class="footer-copy">&copy; 2025 Squad D. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script do Chat -->
+  <script src="js/chat.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* ==========================================================================
+   Estilos específicos: Case de Sucesso - Squad D
+   ========================================================================== */
+
+.case-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.case-section {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.case-section h2 {
+  font-size: 1.4rem;
+  color: var(--secondary);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.case-section p {
+  color: #334155;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* Grid de Métricas de Resultados */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.metric-card {
+  background: #f8fafc;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 20px 16px;
+  text-align: center;
+}
+
+.metric-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--primary);
+  display: block;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.metric-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+/* Citação / Depoimento do Case */
+.case-quote {
+  background: linear-gradient(135deg, var(--primary-light) 0%, #f0fdf4 100%);
+  border-left: 5px solid var(--primary);
+  padding: 24px 28px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--secondary);
+  line-height: 1.7;
+  position: relative;
+}
+
+.case-quote-author {
+  display: block;
+  margin-top: 14px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--primary);
+}

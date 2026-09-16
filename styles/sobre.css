@@ -1,0 +1,62 @@
+/* ==========================================================================
+   Estilos específicos: Sobre Nós - Squad D
+   ========================================================================== */
+
+.about-card {
+  max-width: 860px;
+  margin: 0 auto 36px;
+  padding: 40px;
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.about-paragraph {
+  font-size: 1.15rem;
+  color: #334155;
+  line-height: 1.8;
+}
+
+.about-highlight {
+  background: var(--primary-light);
+  border-left: 4px solid var(--primary);
+  padding: 16px 20px;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-weight: 500;
+  color: var(--secondary);
+  font-size: 1.05rem;
+}
+
+/* Missão, Visão e Valores */
+.mvv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.mvv-item {
+  padding: 24px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background-color: #ffffff;
+}
+
+.mvv-item h3 {
+  color: var(--primary);
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.mvv-item p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
